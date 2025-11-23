@@ -1,0 +1,84 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import ProjectCard from '../components/ProjectCard.astro';
+---
+
+<BaseLayout title="Grup de Teatre Jove - Vacarisses">
+    <Header />
+
+    <div class="container">
+        <section class="about">
+            <h2>Qui Som</h2>
+            <p>
+                Som una associació cultural sense ànim de lucre dedicada al món del teatre a Vacarisses. 
+                El nostre grup neix amb la vocació de portar l'art escènic al cor del nostre poble, 
+                creant un espai acollidor i dinàmic per a tots aquells que vulguin descobrir o aprofundir 
+                en el meravellós món del teatre.
+            </p>
+            <p>
+                Amb passió i dedicació, treballem per crear un ambient creatiu on nens, joves i adults 
+                poden expressar-se, créixer i gaudir de l'experiència teatral. El teatre ens uneix, 
+                ens fa reflexionar i ens permet compartir emocions i històries.
+            </p>
+        </section>
+
+        <section class="mission">
+            <h2>La Nostra Missió</h2>
+            <p>
+                La nostra missió és clara i ambiciosa: <strong>promoure el teatre a Vacarisses</strong> 
+                i convertir-nos en el punt d'entrada al món del teatre per a persones de totes les edats.
+            </p>
+            <p>
+                Volem:
+            </p>
+            <ul style="margin-left: 2rem; margin-top: 1rem; font-size: 1.1rem;">
+                <li style="margin-bottom: 0.5rem;">✨ Fer accessible el teatre a tothom: nens, joves i adults</li>
+                <li style="margin-bottom: 0.5rem;">🎪 Crear un espai de creativitat i expressió artística</li>
+                <li style="margin-bottom: 0.5rem;">🌟 Fomentar la cultura teatral al nostre poble</li>
+                <li style="margin-bottom: 0.5rem;">🤝 Construir una comunitat unida al voltant de les arts escèniques</li>
+                <li style="margin-bottom: 0.5rem;">🎬 Oferir oportunitats per descobrir i desenvolupar talents</li>
+            </ul>
+        </section>
+
+        <section class="upcoming-projects">
+            <h2>Propers Projectes</h2>
+            <div class="projects">
+                <ProjectCard 
+                    title="Taller d'Introducció al Teatre"
+                    date="📅 Gener 2026"
+                    description="Tallers per a principiants de totes les edats. Descobriu les bases de la interpretació, l'expressió corporal i la improvisació en un ambient relaxat i divertit."
+                />
+                
+                <ProjectCard 
+                    title="Obra de Primavera"
+                    date="🎭 Estrena: Març 2026"
+                    description="La nostra primera producció teatral! Una obra original que comptarà amb la participació de tots els membres del grup. Detalls proximament."
+                />
+                
+                <ProjectCard 
+                    title="Festival de Teatre Jove"
+                    date="🌟 Juny 2026"
+                    description="Un festival dedicat al teatre jove amb representacions, tallers i activitats per a tota la família. Una celebració de l'art escènic a Vacarisses."
+                />
+            </div>
+        </section>
+
+        <section class="social-links">
+            <h2>Uneix-te a la Nostra Comunitat</h2>
+            <div class="social-buttons">
+                <!-- TODO: Replace with actual WhatsApp community invite link -->
+                <a href="https://chat.whatsapp.com/vostra-comunitat" class="social-btn whatsapp" target="_blank" rel="noopener noreferrer">
+                    📱 Comunitat WhatsApp
+                </a>
+                <!-- TODO: Replace with actual Instagram username -->
+                <a href="https://www.instagram.com/grupteatrejove" class="social-btn instagram" target="_blank" rel="noopener noreferrer">
+                    📸 Segueix-nos a Instagram
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <Footer />
+</BaseLayout>

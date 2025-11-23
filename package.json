@@ -1,0 +1,23 @@
+{
+  "name": "grup-teatre-jove",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Lloc web de l'associació cultural sense ànim de lucre dedicada al teatre a Vacarisses",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "keywords": [
+    "teatre",
+    "vacarisses",
+    "cultural"
+  ],
+  "author": "Grup de Teatre Jove",
+  "license": "ISC",
+  "dependencies": {
+    "astro": "^5.16.0"
+  }
+}
