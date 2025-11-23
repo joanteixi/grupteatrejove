@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grup de Teatre Jove - Vacarisses</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.95;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+        
+        section {
+            background: white;
+            margin: 2rem auto;
+            padding: 2rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        h2 {
+            color: #667eea;
+            margin-bottom: 1.5rem;
+            font-size: 2rem;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 0.5rem;
+        }
+        
+        .about p, .mission p {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            text-align: justify;
+        }
+        
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 1.5rem;
+        }
+        
+        .project-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 5px solid #667eea;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        
+        .project-card h3 {
+            color: #764ba2;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+        
+        .project-card .date {
+            color: #667eea;
+            font-weight: bold;
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .project-card p {
+            color: #555;
+        }
+        
+        .social-links {
+            text-align: center;
+            margin-top: 2rem;
+            padding: 2rem;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+        }
+        
+        .social-links h2 {
+            color: white;
+            border-bottom: 3px solid white;
+        }
+        
+        .social-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-top: 1.5rem;
+        }
+        
+        .social-btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            background: white;
+            color: #667eea;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.2);
+        }
+        
+        .social-btn:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.3);
+        }
+        
+        .social-btn.whatsapp {
+            background: #25D366;
+            color: white;
+        }
+        
+        .social-btn.instagram {
+            background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+            color: white;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: #666;
+            margin-top: 2rem;
+        }
+        
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2rem;
+            }
+            
+            header p {
+                font-size: 1rem;
+            }
+            
+            h2 {
+                font-size: 1.5rem;
+            }
+            
+            section {
+                padding: 1.5rem;
+            }
+            
+            .social-buttons {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>🎭 Grup de Teatre Jove</h1>
+        <p>Associació Cultural de Vacarisses</p>
+    </header>
+
+    <div class="container">
+        <section class="about">
+            <h2>Qui Som</h2>
+            <p>
+                Som una associació cultural sense ànim de lucre dedicada al món del teatre a Vacarisses. 
+                El nostre grup neix amb la vocació de portar l'art escènic al cor del nostre poble, 
+                creant un espai acollidor i dinàmic per a tots aquells que vulguin descobrir o aprofundir 
+                en el meravellós món del teatre.
+            </p>
+            <p>
+                Amb passió i dedicació, treballem per crear un ambient creatiu on nens, joves i adults 
+                poden expressar-se, créixer i gaudir de l'experiència teatral. El teatre ens uneix, 
+                ens fa reflexionar i ens permet compartir emocions i històries.
+            </p>
+        </section>
+
+        <section class="mission">
+            <h2>La Nostra Missió</h2>
+            <p>
+                La nostra missió és clara i ambiciosa: <strong>promoure el teatre a Vacarisses</strong> 
+                i convertir-nos en el punt d'entrada al món del teatre per a persones de totes les edats.
+            </p>
+            <p>
+                Volem:
+            </p>
+            <ul style="margin-left: 2rem; margin-top: 1rem; font-size: 1.1rem;">
+                <li style="margin-bottom: 0.5rem;">✨ Fer accessible el teatre a tothom: nens, joves i adults</li>
+                <li style="margin-bottom: 0.5rem;">🎪 Crear un espai de creativitat i expressió artística</li>
+                <li style="margin-bottom: 0.5rem;">🌟 Fomentar la cultura teatral al nostre poble</li>
+                <li style="margin-bottom: 0.5rem;">🤝 Construir una comunitat unida al voltant de les arts escèniques</li>
+                <li style="margin-bottom: 0.5rem;">🎬 Oferir oportunitats per descobrir i desenvolupar talents</li>
+            </ul>
+        </section>
+
+        <section class="upcoming-projects">
+            <h2>Propers Projectes</h2>
+            <div class="projects">
+                <div class="project-card">
+                    <h3>Taller d'Introducció al Teatre</h3>
+                    <div class="date">📅 Gener 2026</div>
+                    <p>
+                        Tallers per a principiants de totes les edats. Descobriu les bases de la 
+                        interpretació, l'expressió corporal i la improvisació en un ambient relaxat i divertit.
+                    </p>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Obra de Primavera</h3>
+                    <div class="date">🎭 Estrena: Març 2026</div>
+                    <p>
+                        La nostra primera producció teatral! Una obra original que comptarà amb la 
+                        participació de tots els membres del grup. Detalls proximament.
+                    </p>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Festival de Teatre Jove</h3>
+                    <div class="date">🌟 Juny 2026</div>
+                    <p>
+                        Un festival dedicat al teatre jove amb representacions, tallers i activitats 
+                        per a tota la família. Una celebració de l'art escènic a Vacarisses.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="social-links">
+            <h2>Uneix-te a la Nostra Comunitat</h2>
+            <div class="social-buttons">
+                <!-- TODO: Replace with actual WhatsApp community invite link -->
+                <a href="https://chat.whatsapp.com/vostra-comunitat" class="social-btn whatsapp" target="_blank" rel="noopener noreferrer">
+                    📱 Comunitat WhatsApp
+                </a>
+                <!-- TODO: Replace with actual Instagram username -->
+                <a href="https://www.instagram.com/grupteatrejove" class="social-btn instagram" target="_blank" rel="noopener noreferrer">
+                    📸 Segueix-nos a Instagram
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Grup de Teatre Jove - Vacarisses. Tots els drets reservats.</p>
+        <p>Associació Cultural sense ànim de lucre</p>
+    </footer>
+</body>
+</html>
